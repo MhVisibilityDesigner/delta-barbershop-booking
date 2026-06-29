@@ -1,0 +1,6 @@
+{
+  "name": "Delta in Home Haircut Booking",
+  "description": "Book premium haircuts in the comfort of your own home with Muhammad Hidayat. Fast, professional, and mobile-friendly haircut home service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

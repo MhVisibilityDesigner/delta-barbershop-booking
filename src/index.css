@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Apply the exact Professional Polish gold and neutral palette to existing classes */
+  --color-amber-300: #F6E29A;
+  --color-amber-400: #E6C655;
+  --color-amber-500: #D4AF37; /* Luxury Gold */
+  --color-amber-600: #AA7C11;
+  --color-amber-700: #886208;
+  --color-neutral-900: #141414; /* Surface color */
+  --color-neutral-950: #0a0a0a; /* Deep luxury black background */
+  
+  --border-color-neutral-800: rgba(255, 255, 255, 0.1); /* Subtle fine line borders */
+}
+
+/* Custom premium styling for smooth scrolling and touch targets */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Luxury button glow effect */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 2px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+
