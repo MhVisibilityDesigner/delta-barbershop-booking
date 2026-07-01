@@ -225,7 +225,7 @@ export default function Reviews() {
             Ulasan Kepuasan Pelanggan
           </h2>
           <p className="mt-4 text-sm sm:text-base text-neutral-400 font-sans leading-relaxed">
-            Kepuasan Anda adalah prioritas utama kami. Berikut adalah ulasan asli dari para pelanggan Barber Muhammad Hidayat.
+            Kepuasan Anda adalah prioritas utama kami. Berikut adalah ulasan asli dari para pelanggan Barber Delta.
           </p>
         </div>
 
@@ -365,7 +365,7 @@ export default function Reviews() {
               Tulis Ulasan Anda
             </h3>
             <p className="text-xs text-neutral-400 mb-6 leading-relaxed">
-              Bagikan pengalaman berharga Anda setelah dicukur oleh Barber Muhammad Hidayat.
+              Bagikan pengalaman berharga Anda setelah dicukur oleh Barber Delta.
             </p>
 
             <form onSubmit={handleReviewSubmit} className="space-y-4">

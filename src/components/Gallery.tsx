@@ -274,7 +274,7 @@ export default function Gallery({ onSelectStyle }: GalleryProps) {
             Inspirasi Model Rambut
           </h2>
           <p className="mt-4 text-sm sm:text-base text-neutral-400 font-sans leading-relaxed">
-            Koleksi hasil cukuran presisi tinggi dan terpopuler dari Barber Muhammad Hidayat.
+            Koleksi hasil cukuran presisi tinggi dan terpopuler dari Barber Delta.
           </p>
         </div>
 

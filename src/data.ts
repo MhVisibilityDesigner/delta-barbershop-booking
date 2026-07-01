@@ -51,7 +51,7 @@ export const HAIR_STYLES: HairStyle[] = [
   {
     id: 'custom',
     name: 'Custom Style',
-    description: 'Diskusikan model rambut impian Anda langsung dengan Barber Muhammad Hidayat.',
+    description: 'Diskusikan model rambut impian Anda langsung dengan Barber profesional kami.',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=400&h=400&q=80',
   },
 ];
@@ -80,7 +80,7 @@ export const PRICE_TIERS: PriceTier[] = [
   {
     range: '50 KM+',
     price: 500000,
-    description: 'Layanan eksklusif jarak jauh, Barber Muhammad Hidayat meluncur langsung khusus untuk Anda.',
+    description: 'Layanan eksklusif jarak jauh, Barber profesional kami meluncur langsung khusus untuk Anda.',
   },
 ];
 
@@ -124,5 +124,5 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 ];
 
 export const WHATSAPP_NUMBER = '08385064581';
-export const OWNER_NAME = 'Muhammad Hidayat';
+export const OWNER_NAME = 'Barber Profesional';
 export const INSTAGRAM_URL = 'https://www.instagram.com/bobberybob.id/';

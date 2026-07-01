@@ -541,7 +541,7 @@ export default function BookingForm({ selectedStyle, selectedDistance, onClearSe
       setShowSuccessModal(true);
 
       // WhatsApp format template:
-      const message = `Hallo Muhammad Hidayat, saya ingin booking haircut.
+      const message = `Halo Barber Delta, saya ingin booking haircut.
 
 Nama: ${fullName}
 Nomor WA: ${whatsappNumber}
@@ -599,7 +599,7 @@ Status DP: ${dpStatusText}`;
             Form Pemesanan Haircut
           </h2>
           <p className="mt-4 text-sm sm:text-base text-neutral-400 font-sans leading-relaxed">
-            Isi data Anda dengan lengkap. Sistem akan otomatis memformat pesan konfirmasi untuk dikirim langsung ke WhatsApp Barber Muhammad Hidayat.
+            Isi data Anda dengan lengkap. Sistem akan otomatis memformat pesan konfirmasi untuk dikirim langsung ke WhatsApp Barber Delta.
           </p>
         </div>
 
@@ -1166,7 +1166,7 @@ Status DP: ${dpStatusText}`;
                 >
                   <CreditCard className={`h-5 w-5 ${paymentMethod === 'BCA' ? 'text-amber-400' : 'text-neutral-500'}`} />
                   <span className="text-xs font-bold font-sans">Transfer BCA</span>
-                  <span className="text-[9px] text-neutral-500 leading-none">M. Hidayat</span>
+                  <span className="text-[9px] text-neutral-500 leading-none">Delta Barber</span>
                 </button>
 
                 {/* DANA */}
@@ -1215,7 +1215,7 @@ Status DP: ${dpStatusText}`;
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <div className="space-y-1">
                           <span className="text-[10px] uppercase font-mono tracking-wider text-amber-500 block">Transfer Rekening BCA</span>
-                          <span className="text-sm font-bold text-white block">Muhammad Hidayat</span>
+                          <span className="text-sm font-bold text-white block">Delta Barber</span>
                           <span className="text-base font-mono font-black text-amber-400 tracking-wider block font-bold">2941084780</span>
                         </div>
                         <button
@@ -1246,7 +1246,7 @@ Status DP: ${dpStatusText}`;
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <div className="space-y-1">
                           <span className="text-[10px] uppercase font-mono tracking-wider text-amber-500 block">Transfer DANA</span>
-                          <span className="text-sm font-bold text-white block">Muhammad Hidayat</span>
+                          <span className="text-sm font-bold text-white block">Delta Barber</span>
                           <span className="text-base font-mono font-black text-amber-400 tracking-wider block font-bold">087899804147</span>
                         </div>
                         <button
@@ -1391,7 +1391,7 @@ Status DP: ${dpStatusText}`;
                 <ol className="list-decimal pl-4 mt-1.5 space-y-1">
                   <li>Klik tombol <strong className="text-amber-400">KIRIM BOOKING KE WHATSAPP</strong> di bawah.</li>
                   <li>Sistem akan mengalihkan Anda ke WhatsApp dengan pesan yang sudah terisi otomatis.</li>
-                  <li>Kirimkan pesan tersebut tanpa merubah isinya ke Barber Muhammad Hidayat.</li>
+                  <li>Kirimkan pesan tersebut tanpa merubah isinya ke Barber Delta.</li>
                   <li>Barber akan membalas untuk konfirmasi kesiapan jadwal & rincian rute navigasi.</li>
                 </ol>
               </div>

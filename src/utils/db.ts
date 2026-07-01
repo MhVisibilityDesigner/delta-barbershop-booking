@@ -41,7 +41,7 @@ const DEFAULT_REVIEWS_BASELINE: Review[] = [
     id: 'r_base_4',
     name: 'Hendra',
     rating: 5,
-    comment: 'Langganan terbaik! Selalu puas dengan hasil potongan rambut mas Hidayat.',
+    comment: 'Langganan terbaik! Selalu puas dengan hasil potongan rambutnya, rapi dan konsisten.',
     date: '2026-06-25',
     isPinned: true
   }

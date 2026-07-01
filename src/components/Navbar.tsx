@@ -5,12 +5,26 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Scissors, Award, Calendar } from 'lucide-react';
-import { ASSETS } from '../data';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [logoExists, setLogoExists] = useState(false);
+  const [isCheckingLogo, setIsCheckingLogo] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/assets/images/logo.png';
+    img.onload = () => {
+      setLogoExists(true);
+      setIsCheckingLogo(false);
+    };
+    img.onerror = () => {
+      setLogoExists(false);
+      setIsCheckingLogo(false);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,25 +78,21 @@ export default function Navbar() {
             <a
               href="#home"
               onClick={(e) => handleNavClick(e, '#home')}
-              className="flex items-center gap-3 group"
+              className="flex items-center group"
               id="navbar-logo-link"
             >
-              <div className="relative h-10 w-10 overflow-hidden rounded-full border border-amber-500 bg-neutral-900 p-0.5 transition-transform duration-300 group-hover:scale-105">
+              {logoExists && !isCheckingLogo ? (
                 <img
-                  src={ASSETS.logo}
-                  alt="Delta Logo"
-                  className="h-full w-full rounded-full object-cover"
+                  src="/assets/images/logo.png"
+                  alt="Delta Barbershop.co"
+                  className="h-auto max-h-[42px] sm:max-h-[52px] md:max-h-[52px] lg:max-h-[60px] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-sans text-base font-black tracking-widest text-white group-hover:text-amber-400 transition-colors">
-                  DELTA<span className="text-amber-500">.</span>INHOME
+              ) : (
+                <span className="font-sans text-lg sm:text-xl md:text-2xl font-black tracking-tight text-white group-hover:text-amber-400 transition-colors">
+                  Delta Barbershop<span className="text-amber-500">.</span>co
                 </span>
-                <span className="font-mono text-[9px] text-neutral-400 tracking-wider">
-                  PREMIUM HAIR SERVICE
-                </span>
-              </div>
+              )}
             </a>
 
             {/* Desktop Navigation */}

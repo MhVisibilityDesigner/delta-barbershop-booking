@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   const handleWhatsAppChat = () => {
-    const message = `Hallo Muhammad Hidayat, saya ingin bertanya tentang layanan haircut Delta in Home.`;
+    const message = `Halo Barber Delta, saya ingin bertanya tentang layanan haircut Delta in Home.`;
     const url = `https://wa.me/62${WHATSAPP_NUMBER.substring(1)}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -101,11 +101,11 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-6 text-base sm:text-lg md:text-xl text-neutral-300 font-sans max-w-2xl mx-auto leading-relaxed"
         >
-          Potong rambut profesional langsung ke lokasi Anda. Rasakan kenyamanan maksimal dicukur oleh{' '}
+          Layanan potong rambut premium langsung ke lokasi Anda. Rasakan kenyamanan maksimal dicukur oleh{' '}
           <span className="text-white font-medium underline decoration-amber-500 decoration-2 underline-offset-4">
-            {OWNER_NAME}
+            Stylist Profesional Kami
           </span>{' '}
-          tanpa macet, antre, atau keluar rumah.
+          tanpa mengantre atau meninggalkan kenyamanan rumah.
         </motion.p>
 
         {/* Bullet Trust Factors */}

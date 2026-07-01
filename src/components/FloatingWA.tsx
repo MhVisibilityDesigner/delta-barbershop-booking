@@ -9,7 +9,7 @@ import { WHATSAPP_NUMBER, OWNER_NAME } from '../data';
 
 export default function FloatingWA() {
   const handleClick = () => {
-    const message = `Hallo Muhammad Hidayat, saya ingin bertanya tentang layanan haircut Delta in Home.`;
+    const message = `Halo Barber Delta, saya ingin bertanya tentang layanan haircut Delta in Home.`;
     const cleanedNumber = WHATSAPP_NUMBER.startsWith('0')
       ? `62${WHATSAPP_NUMBER.substring(1)}`
       : WHATSAPP_NUMBER;

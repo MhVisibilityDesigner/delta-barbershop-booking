@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const handleWhatsApp = () => {
-    const message = `Hallo Muhammad Hidayat, saya ingin booking haircut Delta in Home.`;
+    const message = `Halo Barber Delta, saya ingin booking haircut Delta in Home.`;
     const cleanedNumber = WHATSAPP_NUMBER.startsWith('0')
       ? `62${WHATSAPP_NUMBER.substring(1)}`
       : WHATSAPP_NUMBER;
@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
             
             <p className="font-sans text-xs sm:text-sm text-neutral-400 max-w-sm leading-relaxed">
-              Layanan potong rambut premium langsung ke lokasi Anda oleh Barber profesional Muhammad Hidayat. Solusi cukur elite tanpa ribet keluar rumah.
+              Layanan potong rambut premium langsung ke lokasi Anda oleh Barber profesional berpengalaman. Solusi cukur elite tanpa ribet keluar rumah.
             </p>
 
             {/* Social Icons */}
@@ -118,7 +118,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-amber-500 shrink-0" />
-                <span>Owner: Muhammad Hidayat</span>
+                <span>Owner: Delta Barber</span>
               </div>
             </div>
           </div>
